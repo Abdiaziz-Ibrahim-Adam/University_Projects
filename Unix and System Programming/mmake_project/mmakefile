@@ -1,0 +1,8 @@
+mexec: mexec.o parser.o
+	gcc -o mexec mexec.o parser.o
+
+mexec.o: mexec.c
+	gcc -c mexec.c
+
+parser.o: parser.c
+	gcc -c parser.c
